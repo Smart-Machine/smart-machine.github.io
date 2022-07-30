@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Page</title>
 
     <!-- link css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,13 +15,18 @@
 </head>
 <body>
     <div id="welcome_text">
-        Welcome, Friend.
+        Welcome, Stranger.
     </div>
 
     <button id="welcome_button" onclick="welcome_button_click()">▼</button>
 
+    <div id="welcome_blur_video"></div>
 
-    <script src="js/welcome_scroll.js" defer> </script>
-    <script src="js/welcome_button_functions.js" defer> </script>
+    <video id="welcome_video" autoplay muted loop>
+        <source src="video/Triangle.mp4" type="video/mp4">
+    </video>
+
+    <script src="js/welcome_scroll.js" defer></script>
+    <script src="js/welcome_button_functions.js" defer></script>
 </body>
 </html>
